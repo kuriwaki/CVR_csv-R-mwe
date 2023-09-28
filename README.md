@@ -32,7 +32,9 @@ The datasets are about cropped so they are manageable for github.
 
 The key function is `read_melt()`, which takes the standard wide format
 CVR and turns it into a long file. It currently works for the three
-types of files above.
+types of files above. Each county’s file is output to a `feather` file
+that is faster to read and write. They are then stacked together in
+`04_stack_AZ.R`.
 
 Edits welcome.
 
