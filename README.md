@@ -30,6 +30,12 @@ The datasets are about cropped so they are manageable for github.
 - Pima are excel files where there is no party information in the excel
   file itself.
 
+The key function is `read_melt()`, which takes the standard wide format
+CVR and turns it into a long file. It currently works for the three
+types of files above.
+
+Edits welcome.
+
 ## Use
 
 Test this github repo by opening it in Rstudio Projects, and then
