@@ -14,11 +14,11 @@ vot_paths <- vot_paths[az_order]
 
 # Stack -----
 vot_long <- vot_paths |>
-  map(read_dta) |>
+  map(read_feather) |>
   list_rbind(names_to = "county")
 
 iss_stck <- iss_paths |>
-  map(read_dta) |>
+  map(read_feather) |>
   list_rbind(names_to = "county")
 
 
@@ -39,7 +39,7 @@ iss_fmt <- iss_stck |>
 
 
 # Write ---
-js_path <- "~/Dropbox/CVR_ticketsplit/data"
+js_path <- NULL # REPLACE WITH REAL PATH
 
 vot_fmt |>
   write_dta(path(js_path, "AZ", "offices_votes.dta"))
