@@ -1,7 +1,10 @@
 Working Example of Cleaning CVRs in CSVs
 ================
 
-This data is formatted as follows
+The goal of this repo is to serve as one example of cleaning CVRs that
+come in csvs and spreadsheets.
+
+This directory is formatted as follows
 
     ├── 00_setup.R
     ├── 01_yuma.R

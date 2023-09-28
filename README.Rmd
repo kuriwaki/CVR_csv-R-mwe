@@ -7,8 +7,9 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+The goal of this repo is to serve as one example of cleaning CVRs that come in csvs and spreadsheets.
 
-This data is formatted as follows
+This directory is formatted as follows
 
 ```
 ├── 00_setup.R
